@@ -96,20 +96,24 @@
 
 
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="heyuanjie的博客">
-<meta property="og:url" content="http://yoursite.com/archives/2019/04/index.html">
+  <meta name="description" content="题目链接 很考验对背包的理解 对于$1$~$sqrt(n)$与$(sqrt(n)+$$1)$~$n,$我们可以用NOIP2001数的划分的类似做法，分别处理，显然$1$~$sqrt(n)$是个多重背包问题，$(sqrt(n)+$$1)$~$n$是个完全背包问题 对于$1$~$sqrt(n)$，我们可以用总方案数减去不合法的方案数(具体见代码注释)，并利用滚存优化空间 对于$(sqrt(n)+$$1">
+<meta property="og:type" content="article">
+<meta property="og:title" content="题解 CF718C 【Sasha and Array】">
+<meta property="og:url" content="http://yoursite.com/2019/04/07/51nod有限背包计数问题/index.html">
 <meta property="og:site_name" content="heyuanjie的博客">
+<meta property="og:description" content="题目链接 很考验对背包的理解 对于$1$~$sqrt(n)$与$(sqrt(n)+$$1)$~$n,$我们可以用NOIP2001数的划分的类似做法，分别处理，显然$1$~$sqrt(n)$是个多重背包问题，$(sqrt(n)+$$1)$~$n$是个完全背包问题 对于$1$~$sqrt(n)$，我们可以用总方案数减去不合法的方案数(具体见代码注释)，并利用滚存优化空间 对于$(sqrt(n)+$$1">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-04-06T23:41:26.490Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="heyuanjie的博客">
+<meta name="twitter:title" content="题解 CF718C 【Sasha and Array】">
+<meta name="twitter:description" content="题目链接 很考验对背包的理解 对于$1$~$sqrt(n)$与$(sqrt(n)+$$1)$~$n,$我们可以用NOIP2001数的划分的类似做法，分别处理，显然$1$~$sqrt(n)$是个多重背包问题，$(sqrt(n)+$$1)$~$n$是个完全背包问题 对于$1$~$sqrt(n)$，我们可以用总方案数减去不合法的方案数(具体见代码注释)，并利用滚存优化空间 对于$(sqrt(n)+$$1">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/archives/2019/04/">
+  <link rel="canonical" href="http://yoursite.com/2019/04/07/51nod有限背包计数问题/">
 
 
 
@@ -119,7 +123,7 @@
   };
 </script>
 
-  <title>归档 | heyuanjie的博客</title>
+  <title>题解 CF718C 【Sasha and Array】 | heyuanjie的博客</title>
   
 
 
@@ -167,7 +171,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -277,7 +281,7 @@
         
         
           
-          <li class="menu-item menu-item-archives menu-item-active">
+          <li class="menu-item menu-item-archives">
 
     
     
@@ -348,174 +352,182 @@
           
             
 
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
-
           
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
+  <div id="posts" class="posts-expand">
+    
 
-      
-      <span class="archive-page-counter">
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/07/51nod有限背包计数问题/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="heyuanjie">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/39.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="heyuanjie的博客">
+    </span>
+
+    
+      <header class="post-header">
+
         
         
+          <h1 class="post-title" itemprop="name headline">题解 CF718C 【Sasha and Array】
+
+              
+            
+          </h1>
         
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-04-07 07:41:18 / 修改时间：07:41:26" itemprop="dateCreated datePublished" datetime="2019-04-07T07:41:18+08:00">2019-04-07</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
           
-        
-        嗯..! 目前共计 3 篇日志。 继续努力。
-      </span>
-      
 
-      
-
-        
-        
-        
-
-        
           
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2019">2019</h1>
-          </div>
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2019/04/07/51nod有限背包计数问题/" itemprop="url">
             
-              <span itemprop="name">题解 CF718C 【Sasha and Array】</span>
-            
-          </a>
-        
-      </h2>
+          
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-04-07T07:41:18+08:00" content="2019-04-07">
-          04-07
-        </time>
-      </div>
+          
+          
 
-    </header>
-  </article>
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon">
+            <i class="fa fa-eye"></i>
+             阅读次数： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
 
+          
 
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2019/04/04/题解 CF718C 【Sasha and Array】/" itemprop="url">
-            
-              <span itemprop="name">题解 CF718C 【Sasha and Array】</span>
-            
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-04-04T07:31:30+08:00" content="2019-04-04">
-          04-04
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
 
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2019/04/03/洛谷P1357花园/" itemprop="url">
-            
-              <span itemprop="name">洛谷P1357花园</span>
-            
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-04-03T14:45:30+08:00" content="2019-04-03">
-          04-03
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
-
+        <p><a href="http://www.51nod.com/Challenge/Problem.html#!#problemId=1597" target="_blank" rel="noopener">题目链接</a></p>
+<p>很考验对背包的理解</p>
+<p>对于$1$~$sqrt(n)$与$(sqrt(n)+$$1)$~$n,$我们可以用NOIP2001数的划分的类似做法，分别处理，显然$1$~$sqrt(n)$是个多重背包问题，$(sqrt(n)+$$1)$~$n$是个完全背包问题</p>
+<p>对于$1$~$sqrt(n)$，我们可以用总方案数减去不合法的方案数(具体见代码注释)，并利用滚存优化空间</p>
+<p>对于$(sqrt(n)+$$1)$~$n,$我们可以用<a href="https://www.luogu.org/problemnew/show/P1025" target="_blank" rel="noopener">NOIP2001数的划分</a>的类似做法，将划分分成两种类型，进行$dp$转移</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> ll long long</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> re register</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> inf 0x3f3f3f3f</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">int</span> <span class="title">read</span><span class="params">()</span></span>&#123;</span><br><span class="line">   <span class="keyword">int</span> x=<span class="number">0</span>,w=<span class="number">0</span>;<span class="keyword">char</span> ch=getchar();</span><br><span class="line">   <span class="keyword">while</span> (!<span class="built_in">isdigit</span>(ch))w|=ch==<span class="string">'-'</span>,ch=getchar();</span><br><span class="line">   <span class="keyword">while</span> (<span class="built_in">isdigit</span>(ch))x=(x&lt;&lt;<span class="number">1</span>)+(x&lt;&lt;<span class="number">3</span>)+ch-<span class="string">'0'</span>,ch=getchar();</span><br><span class="line">   <span class="keyword">return</span> w?-x:x;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">int</span> f[<span class="number">2</span>][<span class="number">393939</span>],g[<span class="number">319</span>][<span class="number">100007</span>],ans;</span><br><span class="line"><span class="function"><span class="keyword">signed</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line"><span class="comment">//	freopen("game.in", "r", stdin); freopen("game.out", "w", stdout); </span></span><br><span class="line">	<span class="keyword">int</span> n=read(),mod=read();</span><br><span class="line">	f[<span class="number">0</span>][<span class="number">0</span>]=<span class="number">1</span>;<span class="comment">//选0个的方案数为1 </span></span><br><span class="line">	<span class="keyword">int</span> sq=<span class="built_in">sqrt</span>(n),now=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=sq;++i)&#123;</span><br><span class="line">		now^=<span class="number">1</span>;<span class="comment">//滚存 </span></span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;=n;++j)&#123;</span><br><span class="line">			f[now][j]=f[now^<span class="number">1</span>][j];<span class="comment">//加上i-1的方案种数 </span></span><br><span class="line">			<span class="keyword">if</span> (j&gt;=i)f[now][j]+=f[now][j-i];<span class="comment">//完全背包方案数的递推式 </span></span><br><span class="line">			<span class="keyword">if</span> (f[now][j]&gt;=mod)f[now][j]-=mod;</span><br><span class="line">			<span class="keyword">if</span> (j&gt;=i*(i+<span class="number">1</span>))f[now][j]=f[now][j]-f[now^<span class="number">1</span>][j-i*(i+<span class="number">1</span>)]+mod;<span class="comment">//减去不符合的方案数，即不在j-i*i到j范围内的方案数 </span></span><br><span class="line">			<span class="keyword">if</span> (f[now][j]&gt;=mod)f[now][j]-=mod;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;<span class="comment">//前sqrt(n)个数进行多重背包计算方案 </span></span><br><span class="line"><span class="comment">//g[i][j]表示选了i个,而不是选到第i种，和为j的方案数，注意i的含义与f[i][j]中的i的含义不一样 </span></span><br><span class="line"><span class="comment">//类似NOIP2001数的划分的做法,所有划分成两种：</span></span><br><span class="line"><span class="comment">//1.包含sqrt(n)+1(即最小的数)</span></span><br><span class="line"><span class="comment">//2.不包含sqrt(n)+1的</span></span><br><span class="line"><span class="comment">//一个dp状态的方案数就是由这两种划分构成的</span></span><br><span class="line"><span class="comment">//对于第一种划分，只需要单独加上一份sqrt(n)+1即可，所以划分数等于f[i-1][j-(sqrt(n)+1)];</span></span><br><span class="line"><span class="comment">//对于第二种划分，只需要给当前每份都加上1，每份就不可能等于sqrt(n)+1了，因为最小就是sqrt(n)+1,所以划分数就等于f[i][j+i];</span></span><br><span class="line">	g[<span class="number">0</span>][<span class="number">0</span>]=<span class="number">1</span>;<span class="comment">//选0个，和为0的方案数为1 </span></span><br><span class="line">	<span class="keyword">if</span> (sq+<span class="number">1</span>&lt;=n)g[<span class="number">1</span>][sq+<span class="number">1</span>]=<span class="number">1</span>;<span class="comment">//选1个sqrt(n)+1(最小值) </span></span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=sq;++i)&#123;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;=n;++j)&#123;</span><br><span class="line">			<span class="keyword">if</span> (j+sq+<span class="number">1</span>&lt;=n)g[i+<span class="number">1</span>][j+sq+<span class="number">1</span>]+=g[i][j];<span class="comment">//第一种划分 </span></span><br><span class="line">			<span class="keyword">if</span> (g[i+<span class="number">1</span>][j+sq+<span class="number">1</span>]&gt;=mod)g[i+<span class="number">1</span>][j+sq+<span class="number">1</span>]-=mod; </span><br><span class="line">			<span class="keyword">if</span> (j+i&lt;=n)g[i][j+i]+=g[i][j];<span class="comment">//第二种划分 </span></span><br><span class="line">			<span class="keyword">if</span> (g[i][j+i]&gt;=mod)g[i][j+i]-=mod;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;=n;++i)</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;=sq;++j)&#123;</span><br><span class="line">			ans+=<span class="number">1l</span>l*f[now][i]*g[j][n-i]%mod;<span class="comment">// 最后枚举多少空间给前sqrt(n)个物品(剩下空间给其它物品)</span></span><br><span class="line">			<span class="keyword">if</span> (ans&gt;=mod)ans-=mod;</span><br><span class="line">		&#125;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"%d"</span>,ans);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      
     </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/04/04/题解 CF718C 【Sasha and Array】/" rel="next" title="题解 CF718C 【Sasha and Array】">
+                <i class="fa fa-chevron-left"></i> 题解 CF718C 【Sasha and Array】
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+  </div>
 
 
           </div>
           
+
+  
+
+
 
         </div>
         
@@ -758,6 +770,10 @@
 
 
   
+  <script src="/js/src/scrollspy.js?v=6.7.0"></script>
+<script src="/js/src/post-details.js?v=6.7.0"></script>
+
+
 
   
 
@@ -1122,6 +1138,43 @@
   
   
 
+  
+    
+      <script type="text/x-mathjax-config">
+  
+
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+      
+      equationNumbers: {
+        autoNumber: "AMS"
+      }
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+      for (i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+  });
+</script>
+<script src="//cdn.jsdelivr.net/npm/mathjax@2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<style>
+.MathJax_Display {
+  overflow: auto hidden;
+}
+</style>
+
+    
   
 
 
