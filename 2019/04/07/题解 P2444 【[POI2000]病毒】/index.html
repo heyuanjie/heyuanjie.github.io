@@ -98,15 +98,15 @@
 
   <meta name="description" content="很考验对$fail$指针的理解,假设我们构造出了一个无限长的安全代码，再到$AC$自动机上匹配，从原点出发，向下走遇到一个环，然后不停地在这个环上跳转(无法理解就手玩样例)，且这个环上没有危险节点(即病毒单词最后一个字母在$Trie$树上的位置) 注意：这个环不包括$fail$指针,但是包括优化边(即如果节点$i$的某个字符儿子为空，那么这个儿子存为$i$的$fail$指针指向的节点的相同字符儿子">
 <meta property="og:type" content="article">
-<meta property="og:title" content="heyuanjie的博客">
+<meta property="og:title" content="题解 P2444 【[POI2000]病毒】">
 <meta property="og:url" content="http://yoursite.com/2019/04/07/题解 P2444 【[POI2000]病毒】/index.html">
 <meta property="og:site_name" content="heyuanjie的博客">
 <meta property="og:description" content="很考验对$fail$指针的理解,假设我们构造出了一个无限长的安全代码，再到$AC$自动机上匹配，从原点出发，向下走遇到一个环，然后不停地在这个环上跳转(无法理解就手玩样例)，且这个环上没有危险节点(即病毒单词最后一个字母在$Trie$树上的位置) 注意：这个环不包括$fail$指针,但是包括优化边(即如果节点$i$的某个字符儿子为空，那么这个儿子存为$i$的$fail$指针指向的节点的相同字符儿子">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://i.loli.net/2019/04/06/5ca86414ee224.png">
-<meta property="og:updated_time" content="2019-04-07T04:55:48.640Z">
+<meta property="og:updated_time" content="2019-04-07T04:57:17.656Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="heyuanjie的博客">
+<meta name="twitter:title" content="题解 P2444 【[POI2000]病毒】">
 <meta name="twitter:description" content="很考验对$fail$指针的理解,假设我们构造出了一个无限长的安全代码，再到$AC$自动机上匹配，从原点出发，向下走遇到一个环，然后不停地在这个环上跳转(无法理解就手玩样例)，且这个环上没有危险节点(即病毒单词最后一个字母在$Trie$树上的位置) 注意：这个环不包括$fail$指针,但是包括优化边(即如果节点$i$的某个字符儿子为空，那么这个儿子存为$i$的$fail$指针指向的节点的相同字符儿子">
 <meta name="twitter:image" content="https://i.loli.net/2019/04/06/5ca86414ee224.png">
 
@@ -125,7 +125,7 @@
   };
 </script>
 
-  <title> | heyuanjie的博客</title>
+  <title>题解 P2444 【[POI2000]病毒】 | heyuanjie的博客</title>
   
 
 
@@ -391,7 +391,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
+          <h1 class="post-title" itemprop="name headline">题解 P2444 【[POI2000]病毒】
 
               
             
@@ -417,7 +417,7 @@
                 
               
 
-              <time title="创建时间：2019-04-07 12:54:08 / 修改时间：12:55:48" itemprop="dateCreated datePublished" datetime="2019-04-07T12:54:08+08:00">2019-04-07</time>
+              <time title="创建时间：2019-04-07 12:57:13 / 修改时间：12:57:17" itemprop="dateCreated datePublished" datetime="2019-04-07T12:57:13+08:00">2019-04-07</time>
             
 
             
@@ -1143,6 +1143,43 @@
   
   
 
+  
+    
+      <script type="text/x-mathjax-config">
+  
+
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+      
+      equationNumbers: {
+        autoNumber: "AMS"
+      }
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+      for (i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+  });
+</script>
+<script src="//cdn.jsdelivr.net/npm/mathjax@2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<style>
+.MathJax_Display {
+  overflow: auto hidden;
+}
+</style>
+
+    
   
 
 
