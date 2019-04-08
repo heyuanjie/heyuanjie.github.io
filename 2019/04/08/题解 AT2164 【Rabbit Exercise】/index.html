@@ -96,26 +96,24 @@
 
 
 
-  <meta name="description" content="很考验对$fail$指针的理解,假设我们构造出了一个无限长的安全代码，再到$AC$自动机上匹配，从原点出发，向下走遇到一个环，然后不停地在这个环上跳转(无法理解就手玩样例)，且这个环上没有危险节点(即病毒单词最后一个字母在$Trie$树上的位置) 注意：这个环不包括$fail$指针,但是包括优化边(即如果节点$i$的某个字符儿子为空，那么这个儿子存为$i$的$fail$指针指向的节点的相同字符儿子">
+  <meta name="description" content="当$k=1$时，$a[i]=\frac{1}{2}[a[i-1]-(a[i]-a[i-1])]+\frac{1}{2}[a[i+1]+(a[i+1]-a[i])]$ 经过化简后$a[i]=a[i+1]+a[i-1]-a[i]$,用差分数组表示就是: $c[i]=a[i]-a[i-1]$ $c[i]=(a[i+1]+a[i-1]-a[i])-a[i-1]$ $c[i]=a[i+1]-a[i]$ $c">
 <meta property="og:type" content="article">
-<meta property="og:title" content="题解 P2444 【[POI2000]病毒】">
-<meta property="og:url" content="http://yoursite.com/2019/04/07/题解 P2444 【[POI2000]病毒】/index.html">
+<meta property="og:title" content="题解 AT2164 【Rabbit Exercise】">
+<meta property="og:url" content="http://yoursite.com/2019/04/08/题解 AT2164 【Rabbit Exercise】/index.html">
 <meta property="og:site_name" content="heyuanjie的博客">
-<meta property="og:description" content="很考验对$fail$指针的理解,假设我们构造出了一个无限长的安全代码，再到$AC$自动机上匹配，从原点出发，向下走遇到一个环，然后不停地在这个环上跳转(无法理解就手玩样例)，且这个环上没有危险节点(即病毒单词最后一个字母在$Trie$树上的位置) 注意：这个环不包括$fail$指针,但是包括优化边(即如果节点$i$的某个字符儿子为空，那么这个儿子存为$i$的$fail$指针指向的节点的相同字符儿子">
+<meta property="og:description" content="当$k=1$时，$a[i]=\frac{1}{2}[a[i-1]-(a[i]-a[i-1])]+\frac{1}{2}[a[i+1]+(a[i+1]-a[i])]$ 经过化简后$a[i]=a[i+1]+a[i-1]-a[i]$,用差分数组表示就是: $c[i]=a[i]-a[i-1]$ $c[i]=(a[i+1]+a[i-1]-a[i])-a[i-1]$ $c[i]=a[i+1]-a[i]$ $c">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://i.loli.net/2019/04/06/5ca86414ee224.png">
-<meta property="og:updated_time" content="2019-04-07T04:57:17.656Z">
+<meta property="og:updated_time" content="2019-04-08T07:15:52.766Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="题解 P2444 【[POI2000]病毒】">
-<meta name="twitter:description" content="很考验对$fail$指针的理解,假设我们构造出了一个无限长的安全代码，再到$AC$自动机上匹配，从原点出发，向下走遇到一个环，然后不停地在这个环上跳转(无法理解就手玩样例)，且这个环上没有危险节点(即病毒单词最后一个字母在$Trie$树上的位置) 注意：这个环不包括$fail$指针,但是包括优化边(即如果节点$i$的某个字符儿子为空，那么这个儿子存为$i$的$fail$指针指向的节点的相同字符儿子">
-<meta name="twitter:image" content="https://i.loli.net/2019/04/06/5ca86414ee224.png">
+<meta name="twitter:title" content="题解 AT2164 【Rabbit Exercise】">
+<meta name="twitter:description" content="当$k=1$时，$a[i]=\frac{1}{2}[a[i-1]-(a[i]-a[i-1])]+\frac{1}{2}[a[i+1]+(a[i+1]-a[i])]$ 经过化简后$a[i]=a[i+1]+a[i-1]-a[i]$,用差分数组表示就是: $c[i]=a[i]-a[i-1]$ $c[i]=(a[i+1]+a[i-1]-a[i])-a[i-1]$ $c[i]=a[i+1]-a[i]$ $c">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/04/07/题解 P2444 【[POI2000]病毒】/">
+  <link rel="canonical" href="http://yoursite.com/2019/04/08/题解 AT2164 【Rabbit Exercise】/">
 
 
 
@@ -125,7 +123,7 @@
   };
 </script>
 
-  <title>题解 P2444 【[POI2000]病毒】 | heyuanjie的博客</title>
+  <title>题解 AT2164 【Rabbit Exercise】 | heyuanjie的博客</title>
   
 
 
@@ -374,7 +372,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/07/题解 P2444 【[POI2000]病毒】/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/08/题解 AT2164 【Rabbit Exercise】/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="heyuanjie">
@@ -391,7 +389,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">题解 P2444 【[POI2000]病毒】
+          <h1 class="post-title" itemprop="name headline">题解 AT2164 【Rabbit Exercise】
 
               
             
@@ -417,7 +415,7 @@
                 
               
 
-              <time title="创建时间：2019-04-07 12:57:13 / 修改时间：12:57:17" itemprop="dateCreated datePublished" datetime="2019-04-07T12:57:13+08:00">2019-04-07</time>
+              <time title="创建时间：2019-04-08 15:15:42 / 修改时间：15:15:52" itemprop="dateCreated datePublished" datetime="2019-04-08T15:15:42+08:00">2019-04-08</time>
             
 
             
@@ -462,15 +460,21 @@
       
 
       
-        <p>很考验对$fail$指针的理解,假设我们构造出了一个无限长的安全代码，再到$AC$自动机上匹配，从原点出发，向下走遇到一个环，然后不停地在这个环上跳转(无法理解就手玩样例)，且这个环上没有危险节点(即病毒单词最后一个字母在$Trie$树上的位置)</p>
-<p>注意：<strong>这个环不包括$fail$指针</strong>,但是包括优化边(即如果节点$i$的某个字符儿子为空，那么这个儿子存为$i$的$fail$指针指向的节点的相同字符儿子)(有点绕,放张样例构成的$trie$图)</p>
-<p><img src="https://i.loli.net/2019/04/06/5ca86414ee224.png" alt></p>
-<p>黑边是$trie$树上的正常边，蓝边是在处理$AC$自动机时连上的优化边，红边是$fail$指针。灰色节点即危险节点</p>
-<p>这里的环只由蓝边和黑边构成的，即不考虑走$fail$指针，</p>
-<p>这样，问题就变成了找一个从根节点出发能在不经过危险节点的情况下走到到的环，且环上没有危险节点。</p>
-<p>注意：如果某个点的$fail$指针指向的点是有危险节点，那么该节点也是危险节点</p>
-<p>接下来$dfs$找环，找到就输出属于基础图论。</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> ll long long</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> re register</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> inf 0x3f3f3f3f</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> N 1000007</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">node</span>&#123;</span></span><br><span class="line">    <span class="keyword">int</span> fail,cnt,ch[<span class="number">2</span>];</span><br><span class="line">&#125;f[N&gt;&gt;<span class="number">1</span>];</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">int</span> <span class="title">read</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> x=<span class="number">0</span>,w=<span class="number">0</span>;<span class="keyword">char</span> ch=getchar();</span><br><span class="line">    <span class="keyword">while</span> (!<span class="built_in">isdigit</span>(ch))w|=ch==<span class="string">'-'</span>,ch=getchar();</span><br><span class="line">    <span class="keyword">while</span> (<span class="built_in">isdigit</span>(ch))x=(x&lt;&lt;<span class="number">1</span>)+(x&lt;&lt;<span class="number">3</span>)+ch-<span class="string">'0'</span>,ch=getchar();</span><br><span class="line">    <span class="keyword">return</span> w?-x:x;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">int</span> ans,cnt,ok[N],vis[N];</span><br><span class="line"><span class="keyword">char</span> s[N];</span><br><span class="line"><span class="built_in">queue</span>&lt;<span class="keyword">int</span>&gt;q;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">void</span> <span class="title">build</span><span class="params">(<span class="keyword">char</span> *s)</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> len=<span class="built_in">strlen</span>(s),now=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;len;++i)&#123;</span><br><span class="line">        <span class="keyword">int</span> v=s[i]-<span class="string">'0'</span>;</span><br><span class="line">        <span class="keyword">if</span> (!f[now].ch[v])f[now].ch[v]=++cnt;</span><br><span class="line">        now=f[now].ch[v];</span><br><span class="line">    &#125;</span><br><span class="line">    f[now].cnt=<span class="number">1</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">void</span> <span class="title">build_fail</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="number">2</span>;++i)<span class="keyword">if</span> (f[<span class="number">0</span>].ch[i])q.push(f[<span class="number">0</span>].ch[i]);</span><br><span class="line">    <span class="keyword">while</span> (!q.empty())&#123;</span><br><span class="line">        <span class="keyword">int</span> u=q.front();q.pop();</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="number">2</span>;++i)</span><br><span class="line">            <span class="keyword">if</span> (f[u].ch[i])&#123;</span><br><span class="line">                f[f[u].ch[i]].fail=f[f[u].fail].ch[i];</span><br><span class="line">                f[f[u].ch[i]].cnt|=f[f[f[u].fail].ch[i]].cnt;</span><br><span class="line">                q.push(f[u].ch[i]);</span><br><span class="line">            &#125;<span class="keyword">else</span> f[u].ch[i]=f[f[u].fail].ch[i];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">dfs</span><span class="params">(<span class="keyword">int</span> now)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (ok[now])&#123;<span class="built_in">puts</span>(<span class="string">"TAK"</span>);<span class="built_in">exit</span>(<span class="number">0</span>);&#125;</span><br><span class="line">    <span class="keyword">if</span> (vis[now]||f[now].cnt)<span class="keyword">return</span>;</span><br><span class="line">    vis[now]=ok[now]=<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">if</span> (f[now].ch[<span class="number">0</span>])dfs(f[now].ch[<span class="number">0</span>]);</span><br><span class="line">    <span class="keyword">if</span> (f[now].ch[<span class="number">1</span>])dfs(f[now].ch[<span class="number">1</span>]);</span><br><span class="line">    ok[now]=<span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">signed</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> n=read();</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;++i)&#123;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">"%s"</span>,s);</span><br><span class="line">        build(s);</span><br><span class="line">    &#125;</span><br><span class="line">    build_fail();</span><br><span class="line">    dfs(<span class="number">0</span>);</span><br><span class="line">    <span class="built_in">puts</span>(<span class="string">"NIE"</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        <p>当$k=1$时，$a[i]=\frac{1}{2}[a[i-1]-(a[i]-a[i-1])]+\frac{1}{2}[a[i+1]+(a[i+1]-a[i])]$</p>
+<p>经过化简后$a[i]=a[i+1]+a[i-1]-a[i]$,用差分数组表示就是:</p>
+<p>$c[i]=a[i]-a[i-1]$</p>
+<p>$c[i]=(a[i+1]+a[i-1]-a[i])-a[i-1]$</p>
+<p>$c[i]=a[i+1]-a[i]$</p>
+<p>$c[i]=c[i+1]$</p>
+<hr>
+<p>$c[i+1]=a[i+1]-a[i]$</p>
+<p>$c[i+1]=a[i+1]-(a[i+1]+a[i-1]-a[i])$</p>
+<p>$c[i+1]=a[i]-a[i-1]$</p>
+<p>$c[i+1]=c[i]$</p>
+<hr>
+<p>然后我们发现一次运算就是把$c[i]$与$c[i+1]$交换，于是$k$轮跳转就相当于$k$次交换，然后利用类似快速幂的方法求解</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> int long long</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> re register</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> inf 0x3f3f3f3f</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> mod 1000000007</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">int</span> <span class="title">read</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> x=<span class="number">0</span>,w=<span class="number">0</span>;<span class="keyword">char</span> ch=getchar();</span><br><span class="line">    <span class="keyword">while</span> (!<span class="built_in">isdigit</span>(ch))w|=ch==<span class="string">'-'</span>,ch=getchar();</span><br><span class="line">    <span class="keyword">while</span> (<span class="built_in">isdigit</span>(ch))x=(x&lt;&lt;<span class="number">1</span>)+(x&lt;&lt;<span class="number">3</span>)+ch-<span class="string">'0'</span>,ch=getchar();</span><br><span class="line">    <span class="keyword">return</span> w?-x:x;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">int</span> a[<span class="number">100007</span>],c[<span class="number">100007</span>],v[<span class="number">100007</span>],t[<span class="number">100007</span>],n;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">void</span> <span class="title">ksm</span><span class="params">(<span class="keyword">int</span> p)</span></span>&#123;</span><br><span class="line">    <span class="keyword">while</span> (p)&#123;</span><br><span class="line">        <span class="keyword">if</span> (p&amp;<span class="number">1</span>)&#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;++i)t[i]=c[v[i]];</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;++i)c[i]=t[i];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;++i)t[i]=v[v[i]];</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;++i)v[i]=t[i];</span><br><span class="line">        p&gt;&gt;=<span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">signed</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    n=read();</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++)a[i]=read(),c[i]=a[i]-a[i<span class="number">-1</span>],v[i]=i;</span><br><span class="line">    <span class="keyword">int</span> m=read(),k=read();</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=m;i++)&#123;</span><br><span class="line">        <span class="keyword">int</span> x=read();</span><br><span class="line">        swap(v[x],v[x+<span class="number">1</span>]);</span><br><span class="line">    &#125;</span><br><span class="line">    ksm(k);</span><br><span class="line">    <span class="keyword">double</span> sum=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;++i)&#123;</span><br><span class="line">        sum+=c[i];</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"%.1lf\n"</span>,sum);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
       
     </div>
 
@@ -500,8 +504,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/04/07/51nod有限背包计数问题/" rel="next" title="题解 51nod有限背包计数问题">
-                <i class="fa fa-chevron-left"></i> 题解 51nod有限背包计数问题
+              <a href="/2019/04/08/题解 CF24D 【Broken robot】/" rel="next" title="题解 CF24D 【Broken robot】">
+                <i class="fa fa-chevron-left"></i> 题解 CF24D 【Broken robot】
               </a>
             
           </div>
@@ -509,10 +513,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/04/08/题解 CF24D 【Broken robot】/" rel="prev" title="题解 CF24D 【Broken robot】">
-                题解 CF24D 【Broken robot】 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
